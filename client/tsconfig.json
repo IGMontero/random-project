@@ -1,0 +1,106 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "build/dist",
+    "module": "esnext",
+    "target": "es5",
+    "lib": ["es6", "dom"],
+    "sourceMap": true,
+    "allowJs": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "rootDir": "src",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "experimentalDecorators": true
+  },
+  "rules": {
+    "align": [
+      true,
+      "parameters",
+      "statements"
+  ],
+  "indent": [
+    true,
+    "spaces"
+  ],
+  "interface-name": [true, "never-prefix"],
+  "jsx-no-lambda": false,
+  "no-console": {
+    "severity": "warning",
+    "options": [
+        "log",
+        "error"
+    ]
+  },
+  "no-consecutive-blank-lines": true,
+  "no-duplicate-variable": true,
+  "no-empty-interface": false,
+  "no-shadowed-variable": true,
+  "no-unused-expression": true,
+  "one-line": [
+    true,
+    "check-open-brace",
+    "check-whitespace"
+  ],
+  "prefer-const": {
+    "severity": "warning",
+    "options": [
+        {
+            "destructuring": "all"
+        }
+    ]
+  },
+  "radix": true,
+  "switch-default": true,
+  "triple-equals": [
+    true,
+    "allow-null-check"
+  ],
+  "typedef": [
+      true,
+      "parameter",
+      "property-declaration"
+  ],
+  "typedef-whitespace": [
+    true,
+    {
+        "call-signature": "nospace",
+        "index-signature": "nospace",
+        "parameter": "nospace",
+        "property-declaration": "nospace",
+        "variable-declaration": "nospace"
+    }
+  ],
+  "variable-name": [
+    true,
+    "ban-keywords",
+    "check-format",
+    "allow-leading-underscore",
+    "allow-pascal-case",
+    "allow-snake-case"
+  ],
+  "whitespace": [
+      true,
+      "check-branch",
+      "check-decl",
+      "check-operator",
+      "check-separator",
+      "check-type"
+    ]
+    },
+    "exclude": [
+      "node_modules",
+      "build",
+      "scripts",
+      "acceptance-tests",
+      "webpack",
+      "jest",
+      "src/setupTests.ts"
+  ]
+}

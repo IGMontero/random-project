@@ -1,0 +1,39 @@
+*,
+*::after,
+*::before{
+  margin:0;
+  padding:0;
+  box-sizing: inherit;
+  font-family: inherit;
+  user-select: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: $font-primary;
+}
+
+html{
+  // 1 rem = 10px
+  font-size: 62.5%;
+}
+
+// Ipad form fix
+
+input {
+  -webkit-user-select: all; /* Chrome, Opera, Safari */
+    -moz-user-select: all; /* Firefox 2+ */
+    -ms-user-select: all; /* IE 10+ */
+    user-select: all; /* Standard syntax */
+    -moz-appearance: none;
+    appearance: none;
+}
+
+textarea {
+  -webkit-user-select: all; /* Chrome, Opera, Safari */
+    -moz-user-select: all; /* Firefox 2+ */
+    -ms-user-select: all; /* IE 10+ */
+    user-select: all; /* Standard syntax */
+    -moz-appearance: none;
+    appearance: none;
+}
